@@ -7,9 +7,10 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utils.config import Config, DRIVER_PATH
+from utils.log import logger
 
 class TestBaiDu(unittest.TestCase):
-    URL = Config().get('websites', 'URL')
+    URL = Config().getByKeys('websites', 'URL')
 
     locator_kw = (By.ID, 'kw')
     locator_su = (By.ID, 'su')
@@ -28,7 +29,7 @@ class TestBaiDu(unittest.TestCase):
         time.sleep(2)
         links = self.driver.find_elements(*self.locator_result)
         for link in links:
-            print(link.text)
+            logger.info(link.text)
 
     def test_search_1(self):
         self.driver.find_element(*self.locator_kw).send_keys('selenium')
@@ -36,7 +37,7 @@ class TestBaiDu(unittest.TestCase):
         time.sleep(2)
         links = self.driver.find_elements(*self.locator_result)
         for link in links:
-            print(link.text)
+            logger.warning(link.text)
 
 if __name__=='__main__':
     unittest.main()
