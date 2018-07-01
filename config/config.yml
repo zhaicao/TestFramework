@@ -2,8 +2,13 @@ websites:
   URL: http://www.baidu.com
 
 log:
-  file_name: test.log
+  file_name: testFramework.log
   backup: 5
   console_level: WARNING
   file_level: DEBUG
   pattern: '%(asctime)s - %(name)s - %(module)s - %(funcName)s - %(levelname)s - %(message)s'
+
+email:
+  smtpserver: smtp.qiye.163.com
+  sender: zhaicao@zjrealtech.com
+  password: M1ZaYUBw9a6ZLjYh

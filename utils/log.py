@@ -1,4 +1,6 @@
-
+"""
+封装日志功能
+"""
 __author__ = 'zhaicao'
 
 import os
