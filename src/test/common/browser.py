@@ -1,5 +1,5 @@
 """
-封装选择浏览器
+封装浏览器通用方法
 """
 
 __author__ = 'zhaicao'
@@ -10,7 +10,7 @@ from selenium import webdriver
 from utils.config import DRIVER_PATH, REPORT_PATH
 
 # 定义浏览器类别
-CHROMEDRIVER_PATH = DRIVER_PATH + '\chromedriver_2.34.exe'
+CHROMEDRIVER_PATH = DRIVER_PATH + '\chromedriver.exe'
 IEDRIVER_PATH = DRIVER_PATH + '\IEDriverServer.exe'
 PHANTOMJSDRIVER_PATH = DRIVER_PATH + '\phantomjs.exe'
 
@@ -51,8 +51,8 @@ class Brower(object):
         保存页面截图
         """
         day = time.strftime('%Y%m%d', time.localtime(time.time()))
-        screenshot_path = REPORT_PATH + '\screenshot_%s' % day
-        if os.path.exists(screenshot_path):
+        screenshot_path = os.path.join(REPORT_PATH, 'screenshot_%s' % day)
+        if not os.path.exists(screenshot_path):
             os.makedirs(screenshot_path)
 
         tm = time.strftime('%H%M%S', time.localtime(time.time()))
@@ -70,3 +70,6 @@ class Brower(object):
         退出driver
         """
         self.driver.quit()
+
+if __name__ == '__main__':
+    Brower().get('http://www.baidu.com').save_screen_shot()

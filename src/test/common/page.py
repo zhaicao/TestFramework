@@ -1,5 +1,5 @@
 """
-封装Page的类
+封装Page通用变量方法
 """
 
 __author__ = 'zhaicao'
