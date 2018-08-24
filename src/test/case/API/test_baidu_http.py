@@ -2,6 +2,7 @@
 """
 接口测试用例
 """
+__author__ = 'zhaicao'
 
 import unittest
 from utils.config import Config, REPORT_PATH

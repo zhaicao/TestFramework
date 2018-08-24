@@ -181,9 +181,9 @@
         
     <div class='page-header'>
         <h1>测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2018-07-04 10:26:54</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:27.556199</p>
-<p class='attribute'><strong>状态:</strong> 通过 1 失败 2</p>
+    <p class='attribute'><strong>开始时间:</strong> 2018-08-24 17:15:28</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:13.218000</p>
+<p class='attribute'><strong>状态:</strong> 失败 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>百度搜索测试</p></div>
@@ -215,67 +215,40 @@
         </tr>
         
     <tr class='failClass'>
-        <td>TestBaiDu</td>
-        <td>3</td>
+        <td>src.test.case.UI.test_baidu.TestBaiDu</td>
         <td>1</td>
-        <td>2</td>
         <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',3)">详情</a></td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
     </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_search</div></td>
+    <td class='failCase'><div class='testcase'>test_search2: 百度搜索测试</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
         失败</a>
     <div id='div_ft1.1' class="popup_window">
-        <pre>ft1.1: 
+        <pre>ft1.1: 搜索关键字:翟操
+
 SubTestCase Failed:
-test_search (__main__.TestBaiDu) (data={'search': 'selenium'})Traceback (most recent call last):
-  File "D:/Python/TestFramework/src/test/case/UI/test_baidu.py", line 57, in test_search
-    self.assertEqual('测试_百度搜索', self.page.result_title)
-AssertionError: '测试_百度搜索' != 'selenium_百度搜索'
-- 测试_百度搜索
-+ selenium_百度搜索
+test_search2 (src.test.case.UI.test_baidu.TestBaiDu) (data='翟操')Traceback (most recent call last):
+  File "D:\Python\Python36\lib\unittest\case.py", line 828, in wrapper
+    func(self, first, second, pageObj=None, msg=None)
+AssertionError: '百度_百度搜索' != '翟操_百度搜索'
+- 百度_百度搜索
+? ^^
++ 翟操_百度搜索
+? ^^
 
-</pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-</tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_search</div></td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        通过</a>
-    <div id='div_pt1.2' class="popup_window">
-        <pre>pt1.2: 
-SubTestCase Pass:
-test_search (__main__.TestBaiDu) (data={'search': '测试'})</pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-</tr>
+During handling of the above exception, another exception occurred:
 
-<tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_search</div></td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        失败</a>
-    <div id='div_ft1.3' class="popup_window">
-        <pre>ft1.3: 
-SubTestCase Failed:
-test_search (__main__.TestBaiDu) (data={'search': '小姐姐'})Traceback (most recent call last):
-  File "D:/Python/TestFramework/src/test/case/UI/test_baidu.py", line 57, in test_search
-    self.assertEqual('测试_百度搜索', self.page.result_title)
-AssertionError: '测试_百度搜索' != '小姐姐_百度搜索'
-- 测试_百度搜索
-+ 小姐姐_百度搜索
-
+Traceback (most recent call last):
+  File "D:\Python\TestFramework\src\test\case\UI\test_baidu.py", line 37, in test_search2
+    self.assertEqual('百度_百度搜索', self.page.result_title, self)
+AssertionError: None
 </pre>
     </div>
     <!--css div popup end-->
@@ -284,9 +257,9 @@ AssertionError: '测试_百度搜索' != '小姐姐_百度搜索'
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>3</td>
             <td>1</td>
-            <td>2</td>
+            <td>0</td>
+            <td>1</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -320,8 +293,8 @@ AssertionError: '测试_百度搜索' != '小姐姐_百度搜索'
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:1, name:'通过'},
-                        {value:2, name:'失败'},
+                        {value:0, name:'通过'},
+                        {value:1, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {

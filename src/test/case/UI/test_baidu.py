@@ -1,3 +1,6 @@
+"""
+UI测试用例
+"""
 __author__ = 'zhaicao'
 
 import os
@@ -24,23 +27,29 @@ class TestBaiDu(unittest.TestCase):
 
     # 数据未分离测试单个查询条件
     def test_search2(self):
+        """百度搜索测试"""
         with self.subTest(data='翟操'):
+            print("搜索关键字:翟操")
             self.sub_setUp()
             self.page.search('翟操')
             time.sleep(2)
             self.page = BaiDuResultPage(self.page)
-            try:
-                self.assertEqual('百度_百度搜索', self.page.result_title)
-                links = self.page.result_links
-                for link in links:
-                    logger.debug(link.text)
-            except:
-                # 断言失败，截图
-                self.page.save_screen_shot()
-                raise AssertionError('Title Error')
-
-            finally:
-                self.sub_tearDown()
+            self.assertEqual('百度_百度搜索', self.page.result_title, self)
+            self.sub_tearDown()
+            # links = self.page.result_links
+            # for link in links:
+            #     logger.debug(link.text)
+            # try:
+            #     self.assertEqual('百度_百度搜索', self.page.result_title)
+            #     links = self.page.result_links
+            #     for link in links:
+            #         logger.debug(link.text)
+            # except:
+            #     # 断言失败，截图
+            #     self.page.save_screen_shot()
+            #     raise AssertionError('Title Error')
+            # finally:
+            #     self.sub_tearDown()
 
     # 数据分离用例
     def test_search(self):
@@ -60,26 +69,5 @@ class TestBaiDu(unittest.TestCase):
                     logger.info(link.text)
                 self.sub_tearDown()
 
-
-if __name__ == '__main__':
-    suite = unittest.TestSuite()
-    tests = [TestBaiDu("test_search")]
-    suite.addTests(tests)
-
-    # 测试报告
-    report = REPORT_PATH + '/UI_report.html'
-    with open(report, 'wb') as f:
-        runner = HTMLTestRunner(f,
-                                verbosity=2,
-                                title='测试报告',
-                                description='百度搜索测试')
-        runner.run(suite)
-
-    # 结果邮件
-    e = Email(receiver='ricky2971@hotmail.com',
-              acc='ricky2971@qq.com',
-              title='百度搜索测试报告',
-              message='最新鲜的测试报告，请各位查收！',
-              path=report
-              )
-    e.send()
+    def test_out(self):
+        self.assertEqual('Test', '1')
