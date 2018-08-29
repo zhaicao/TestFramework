@@ -9,6 +9,6 @@ log:
   pattern: '%(asctime)s - %(name)s - %(module)s - %(funcName)s - %(levelname)s - %(message)s'
 
 email:
-  smtpserver: smtp.qiye.163.com
-  sender: zhaicao@zjrealtech.com
-  password: 111111111111111111
+  smtpserver: smtp.qq.com
+  sender: ricky2971@qq.com
+  password: 1111111111111111

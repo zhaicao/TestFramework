@@ -4,7 +4,7 @@
 """
 __author__ = 'zhaicao'
 
-import unittest
+from utils import unittest
 from utils.config import Config, REPORT_PATH
 from utils.client import HTTPClient
 from utils.log import logger

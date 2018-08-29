@@ -181,8 +181,8 @@
         
     <div class='page-header'>
         <h1>测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2018-08-24 17:15:28</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:13.218000</p>
+    <p class='attribute'><strong>开始时间:</strong> 2018-08-29 10:04:19</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:15.177000</p>
 <p class='attribute'><strong>状态:</strong> 失败 1</p>
 
     </div>
@@ -234,8 +234,10 @@
 
 SubTestCase Failed:
 test_search2 (src.test.case.UI.test_baidu.TestBaiDu) (data='翟操')Traceback (most recent call last):
-  File "D:\Python\Python36\lib\unittest\case.py", line 828, in wrapper
+  File "D:\Python\TestFramework\utils\decoraters.py", line 14, in wrapper
     func(self, first, second, pageObj=None, msg=None)
+  File "D:\Python\TestFramework\utils\unittest.py", line 27, in assertEqual
+    assertion_func(first, second, msg=msg)
 AssertionError: '百度_百度搜索' != '翟操_百度搜索'
 - 百度_百度搜索
 ? ^^
@@ -246,8 +248,10 @@ AssertionError: '百度_百度搜索' != '翟操_百度搜索'
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "D:\Python\TestFramework\src\test\case\UI\test_baidu.py", line 37, in test_search2
+  File "D:\Python\TestFramework\src\test\case\UI\test_baidu.py", line 35, in test_search2
     self.assertEqual('百度_百度搜索', self.page.result_title, self)
+  File "D:\Python\TestFramework\utils\decoraters.py", line 20, in wrapper
+    raise AssertionError(msg)  # 抛出AssertionError和信息
 AssertionError: None
 </pre>
     </div>

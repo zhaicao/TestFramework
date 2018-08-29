@@ -88,8 +88,7 @@ class Email():
 if __name__ == '__main__':
     e = Email(title='搜索测试报告',
               message='今天的测试报告，请查收！',
-              receiver='ricky2971@qq.com',
-              acc='ricky2971@hotmail.com'
+              receiver='ricky2971@hotmail.com'
               )
     e.send()
 

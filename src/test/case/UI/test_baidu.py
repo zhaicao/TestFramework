@@ -3,14 +3,12 @@ UI测试用例
 """
 __author__ = 'zhaicao'
 
-import os
 import time
-import unittest
-from utils.config import Config, DATA_PATH, REPORT_PATH
+# 引入重写的Testcase
+from utils import unittest
+from utils.config import Config, DATA_PATH
 from utils.log import logger
 from utils.file_reader import ExcelReader
-from utils.HTMLTestRunner import HTMLTestRunner
-from utils.mail import Email
 from src.test.page.baidu_result_page import BaiDuMainPage, BaiDuResultPage
 
 
