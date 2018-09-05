@@ -7,19 +7,14 @@ import unittest
 # 引入装饰器
 from utils.decoraters import deco
 
-_MAX_LENGTH = 80
-
-def safe_repr(obj, short=False):
-    try:
-        result = repr(obj)
-    except Exception:
-        result = object.__repr__(obj)
-    if not short or len(result) < _MAX_LENGTH:
-        return result
-    return result[:_MAX_LENGTH] + ' [truncated]...'
-
 # 重写TestCase
 class TestCase(unittest.TestCase):
+    @property
+    def _Parent(self):
+        """
+        返回父类unittest.TestCase的对象
+        """
+        return super()
     # 加上用例异常截图装饰器
     @deco.exceptionCase
     def assertEqual(self, first, second, pageObj=None, msg=None):
@@ -36,10 +31,15 @@ class TestCase(unittest.TestCase):
            operator.
         """
         if not first != second:
-            msg = self._formatMessage(msg, '%s == %s' % (self.safe_repr(first),
-                                                         self.safe_repr(second)))
+            msg = self._formatMessage(msg, '%s == %s' % (super().safe_repr(first),
+                                                         super().safe_repr(second)))
             raise self.failureException(msg)
 
 # 继承TestSuite
 class TestSuite(unittest.TestSuite):
-    pass
+    @property
+    def _Parent(self):
+        """
+        返回父类unittest.TestSuite的对象
+        """
+        return super()
