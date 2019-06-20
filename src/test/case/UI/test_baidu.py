@@ -34,23 +34,12 @@ class TestBaiDu(unittest.TestCase):
             self.page = BaiDuResultPage(self.page)
             self.assertEqual('百度_百度搜索', self.page.result_title, self)
             self.sub_tearDown()
-            # links = self.page.result_links
-            # for link in links:
-            #     logger.debug(link.text)
-            # try:
-            #     self.assertEqual('百度_百度搜索', self.page.result_title)
-            #     links = self.page.result_links
-            #     for link in links:
-            #         logger.debug(link.text)
-            # except:
-            #     # 断言失败，截图
-            #     self.page.save_screen_shot()
-            #     raise AssertionError('Title Error')
-            # finally:
-            #     self.sub_tearDown()
 
-    # 数据分离用例
     def test_search(self):
+        '''
+        测试百度搜索title中内容与查询关键字是否一致
+        :return:
+        '''
         datas = ExcelReader(self.excel).data
         for d in datas:
             with self.subTest(data=d):
@@ -61,11 +50,17 @@ class TestBaiDu(unittest.TestCase):
                 # 跳转到结果页面
                 self.page = BaiDuResultPage(self.page)
                 # 断言title
-                self.assertEqual('测试_百度搜索', self.page.result_title)
-                links = self.page.result_links
-                for link in links:
-                    logger.info(link.text)
-                self.sub_tearDown()
+                try:
+                    self.assertEqual('{}_百度搜索'.format(d['expection']), self.page.result_title)
+                    links = self.page.result_links
+                    for link in links:
+                        logger.info(link.text)
+                except:
+                # 断言失败，截图
+                    self.page.save_screen_shot()
+                    raise AssertionError('Title Error')
+                finally:
+                    self.sub_tearDown()
 
     def test_out(self):
         self.assertEqual('Test', '1')
