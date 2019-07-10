@@ -1,13 +1,6 @@
 # TestFramework
 测试框架
 
-## 依赖库
-- selenium
-- PyYAML
-- xlrd
-- requests
-- jmespath
-- Faker
 ##  运行
 运行入口：`src/test/case/testmain.py `
 ## 目录
