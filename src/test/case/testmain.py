@@ -7,7 +7,7 @@ from utils.HTMLTestRunner import HTMLTestRunner
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    tests = [TestBaiDu("test_search2")]
+    tests = [TestBaiDu("test_search")]
     suite.addTests(tests)
 
     # 测试报告

@@ -20,7 +20,7 @@ EXECUTABLE_PATH = {'firefox': 'wires', 'chrome': CHROMEDRIVER_PATH, 'ie': IEDRIV
 
 # 定义不支持异常
 class UnSupportBrowserTypeError(Exception):
-    pass
+    raise ('Do not supprt the type of browser,please change the others.')
 
 class Brower(object):
     def __init__(self, browser_type='chrome'):

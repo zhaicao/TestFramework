@@ -1,0 +1,6 @@
+selenium == 3.141.0
+PyYAML == 5.1
+xlrd == 1.2.0
+requests == 2019.4.13
+jmespath == 0.9.4
+Faker == 1.0.7

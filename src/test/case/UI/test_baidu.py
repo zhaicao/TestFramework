@@ -1,5 +1,5 @@
 """
-UI测试用例
+百度搜索测试Demo
 """
 __author__ = 'zhaicao'
 
