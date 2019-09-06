@@ -1,6 +1,8 @@
 selenium == 3.141.0
 PyYAML == 5.1
 xlrd == 1.2.0
-requests == 2019.4.13
+requests == 2.18.4
 jmespath == 0.9.4
 Faker == 1.0.7
+pymssql == 2.1.4
+pymysql == 0.9.3

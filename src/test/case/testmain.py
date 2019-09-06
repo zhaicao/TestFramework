@@ -21,9 +21,10 @@ if __name__ == '__main__':
 
     # 结果邮件
     e = Email(receiver='ricky2971@hotmail.com',
-              #acc='ricky2971@qq.com',
+              acc='ricky2971@qq.com',
               title='百度搜索测试报告',
               message='最新鲜的测试报告，请各位查收！',
               path=report
-              )
+             )
+
     e.send()

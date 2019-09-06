@@ -10,17 +10,31 @@ from selenium import webdriver
 from utils.config import DRIVER_PATH, REPORT_PATH
 
 # 定义浏览器类别
-CHROMEDRIVER_PATH = DRIVER_PATH + '\chromedriver.exe'
-IEDRIVER_PATH = DRIVER_PATH + '\IEDriverServer.exe'
-PHANTOMJSDRIVER_PATH = DRIVER_PATH + '\phantomjs.exe'
+CHROMEDRIVER_PATH = os.path.join(DRIVER_PATH, 'chromedriver_mac')
+IEDRIVER_PATH = os.path.join(DRIVER_PATH, 'IEDriverServer.exe')
+FIREFOXDRIVER_PATH = os.path.join(DRIVER_PATH, 'geckodriver.exe')
 
 # Value为对应浏览器的webdriver对象
-TYPES = {'firefox': webdriver.Firefox, 'chrome': webdriver.Chrome, 'ie': webdriver.Ie, 'phantomjs': webdriver.PhantomJS}
-EXECUTABLE_PATH = {'firefox': 'wires', 'chrome': CHROMEDRIVER_PATH, 'ie': IEDRIVER_PATH, 'phantomjs': PHANTOMJSDRIVER_PATH}
+TYPES = {
+    'firefox': webdriver.Firefox,
+    'chrome': webdriver.Chrome,
+    'ie': webdriver.Ie
+    }
+
+EXECUTABLE_PATH = {
+    'firefox': FIREFOXDRIVER_PATH,
+    'chrome': CHROMEDRIVER_PATH,
+    'ie': IEDRIVER_PATH
+    }
 
 # 定义不支持异常
 class UnSupportBrowserTypeError(Exception):
-    raise ('Do not supprt the type of browser,please change the others.')
+    def __init__(self, ErrorInfo):
+        super().__init__(self)
+        self.errorinfo = ErrorInfo
+
+    def __str__(self):
+        return 'Do not supprt the type of browser,please change the others.{}'.format(self.errorinfo)
 
 class Brower(object):
     def __init__(self, browser_type='chrome'):
@@ -72,4 +86,4 @@ class Brower(object):
         self.driver.quit()
 
 if __name__ == '__main__':
-    Brower().get('http://www.baidu.com').save_screen_shot()
+    Brower().get('http://www.baidu.com')

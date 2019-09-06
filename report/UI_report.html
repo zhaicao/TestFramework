@@ -181,9 +181,9 @@
         
     <div class='page-header'>
         <h1>测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2018-09-05 09:22:29</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:11.366000</p>
-<p class='attribute'><strong>状态:</strong> 失败 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2019-09-05 19:15:25</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:18.830398</p>
+<p class='attribute'><strong>状态:</strong> 通过 2 失败 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>百度搜索测试</p></div>
@@ -216,43 +216,1635 @@
         
     <tr class='failClass'>
         <td>src.test.case.UI.test_baidu.TestBaiDu</td>
+        <td>3</td>
+        <td>2</td>
         <td>1</td>
         <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
+        <td><a href="javascript:showClassDetail('c1',3)">详情</a></td>
     </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_search2: 百度搜索测试</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_search</div></td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+    <div id='div_pt1.1' class="popup_window">
+        <pre>pt1.1: --- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'hello world_百度百科'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '实现Hello,World!的方式 - 一只大鸽子的博客 - CSDN博客'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Creating Web Documents: Hello World'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: "程序'猿'的“hello,world!”是什么梗?"
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '如何创建第一个hello world程序 - 凯文 - CSDN博客'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Hello world_视频大全_高清在线观看'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'helloworld吧_百度贴吧'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '你好世界 HELLO WORLD(2019)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'hello world在线试听_高音质歌曲_网易云音乐'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Hello World_百度翻译'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度百科'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试-爱情-智商-性格综合测试等-第一星座'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测速网'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '国际标准情商(EQ)测试题'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试_新浪星座_新浪网'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试_心理测试题_答案_大全-壹心理'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试吧_百度贴吧'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度图片'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_网上预约挂号，门诊加号_好大夫在线'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度汉语'
+Arguments: ()
+
+SubTestCase Pass:
+test_search (src.test.case.UI.test_baidu.TestBaiDu) (data={'search': 'Hello world', 'expection': 'Hello world'})</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_search</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a>
+    <div id='div_pt1.2' class="popup_window">
+        <pre>pt1.2: --- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'hello world_百度百科'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '实现Hello,World!的方式 - 一只大鸽子的博客 - CSDN博客'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Creating Web Documents: Hello World'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: "程序'猿'的“hello,world!”是什么梗?"
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '如何创建第一个hello world程序 - 凯文 - CSDN博客'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Hello world_视频大全_高清在线观看'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'helloworld吧_百度贴吧'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '你好世界 HELLO WORLD(2019)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'hello world在线试听_高音质歌曲_网易云音乐'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Hello World_百度翻译'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度百科'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试-爱情-智商-性格综合测试等-第一星座'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测速网'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '国际标准情商(EQ)测试题'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试_新浪星座_新浪网'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试_心理测试题_答案_大全-壹心理'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试吧_百度贴吧'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度图片'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_网上预约挂号，门诊加号_好大夫在线'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度汉语'
+Arguments: ()
+
+SubTestCase Pass:
+test_search (src.test.case.UI.test_baidu.TestBaiDu) (data={'search': '测试', 'expection': '测试'})</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_search</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
         失败</a>
-    <div id='div_ft1.1' class="popup_window">
-        <pre>ft1.1: 搜索关键字:翟操
+    <div id='div_ft1.3' class="popup_window">
+        <pre>ft1.3: --- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'hello world_百度百科'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '实现Hello,World!的方式 - 一只大鸽子的博客 - CSDN博客'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Creating Web Documents: Hello World'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: "程序'猿'的“hello,world!”是什么梗?"
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '如何创建第一个hello world程序 - 凯文 - CSDN博客'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Hello world_视频大全_高清在线观看'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'helloworld吧_百度贴吧'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '你好世界 HELLO WORLD(2019)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'hello world在线试听_高音质歌曲_网易云音乐'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: 'Hello World_百度翻译'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度百科'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试-爱情-智商-性格综合测试等-第一星座'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测速网'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '国际标准情商(EQ)测试题'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试_新浪星座_新浪网'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '心理测试_心理测试题_答案_大全-壹心理'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试吧_百度贴吧'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度图片'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_网上预约挂号，门诊加号_好大夫在线'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/handlers.py", line 73, in emit
+    logging.FileHandler.emit(self, record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1069, in emit
+    self.stream = self._open()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 1059, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/Ricky/Documents/PythonWorkspace/TestFramework/logs/testFramework.log'
+Call stack:
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/testmain.py", line 20, in &lt;module&gt;
+    runner.run(suite)
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/HTMLTestRunner.py", line 677, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py", line 122, in run
+    test(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 58, in test_search
+    logger.info(link.text)
+Message: '测试_百度汉语'
+Arguments: ()
 
 SubTestCase Failed:
-test_search2 (src.test.case.UI.test_baidu.TestBaiDu) (data='翟操')Traceback (most recent call last):
-  File "D:\Python\TestFramework\utils\decoraters.py", line 14, in wrapper
+test_search (src.test.case.UI.test_baidu.TestBaiDu) (data={'search': '小姐姐', 'expection': '小哥哥'})Traceback (most recent call last):
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/utils/decoraters.py", line 14, in wrapper
     func(self, first, second, pageObj=None, msg=None)
-  File "D:\Python\TestFramework\utils\unittest.py", line 36, in assertEqual
-    assertion_func(first, second, msg=msg)
-AssertionError: '百度_百度搜索' != '翟操_百度搜索'
-- 百度_百度搜索
-? ^^
-+ 翟操_百度搜索
-? ^^
+AssertionError: '小哥哥_百度搜索' != '小姐姐_百度搜索'
+- 小哥哥_百度搜索
+?  ^^
++ 小姐姐_百度搜索
+?  ^^
 
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "D:\Python\TestFramework\src\test\case\UI\test_baidu.py", line 35, in test_search2
-    self.assertEqual('百度_百度搜索', self.page.result_title, self)
-  File "D:\Python\TestFramework\utils\decoraters.py", line 20, in wrapper
-    raise AssertionError(msg)  # 抛出AssertionError和信息
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 55, in test_search
+    self.assertEqual('{}_百度搜索'.format(d['expection']), self.page.result_title)
 AssertionError: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Ricky/Documents/PythonWorkspace/TestFramework/src/test/case/UI/test_baidu.py", line 62, in test_search
+    raise AssertionError('Title Error')
+AssertionError: Title Error
 </pre>
     </div>
     <!--css div popup end-->
@@ -261,8 +1853,8 @@ AssertionError: None
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>1</td>
-            <td>0</td>
+            <td>3</td>
+            <td>2</td>
             <td>1</td>
             <td>0</td>
             <td>&nbsp;</td>
@@ -297,7 +1889,7 @@ AssertionError: None
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:0, name:'通过'},
+                        {value:2, name:'通过'},
                         {value:1, name:'失败'},
                         {value:0, name:'错误'}
                     ],
