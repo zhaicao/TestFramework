@@ -1,5 +1,5 @@
 selenium == 3.141.0
-PyYAML == 5.1
+PyYAML == 5.4
 xlrd == 1.2.0
 requests == 2.18.4
 jmespath == 0.9.4
